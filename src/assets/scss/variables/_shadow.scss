@@ -1,0 +1,42 @@
+$key-shadow-umbra-opacity: 0.14 !default;
+$key-shadow-penumbra-opacity: 0.12 !default;
+$ambient-shadow-opacity: 0.2 !default;
+
+$key-shadow-umbra: (
+  1dp: 0 0 rem(2) 0 rgba(black, $key-shadow-umbra-opacity),
+  2dp: 0 0 rem(4) 0 rgba(black, $key-shadow-umbra-opacity),
+  3dp: 0 rem(3) rem(3) 0 rgba(black, $key-shadow-umbra-opacity),
+  4dp: 0 rem(2) rem(4) 0 rgba(black, $key-shadow-umbra-opacity),
+  6dp: 0 rem(6) rem(10) 0 rgba(black, $key-shadow-umbra-opacity),
+  8dp: 0 rem(8) rem(10) rem(1) rgba(black, $key-shadow-umbra-opacity),
+  9dp: 0 rem(9) rem(12) rem(1) rgba(black, $key-shadow-umbra-opacity),
+  12dp: 0 rem(12) rem(17) rem(2) rgba(black, $key-shadow-umbra-opacity),
+  16dp: 0 rem(16) rem(24) rem(2) rgba(black, $key-shadow-umbra-opacity),
+  24dp: 0 rem(24) rem(38) rem(3) rgba(black, $key-shadow-umbra-opacity)
+);
+
+$key-shadow-penumbra: (
+  1dp: 0 rem(2) rem(2) 0 rgba(black, $key-shadow-penumbra-opacity),
+  2dp: 0 rem(3) rem(4) 0 rgba(black, $key-shadow-penumbra-opacity),
+  3dp: 0 rem(3) rem(4) 0 rgba(black, $key-shadow-penumbra-opacity),
+  4dp: 0 rem(4) rem(5) 0 rgba(black, $key-shadow-penumbra-opacity),
+  6dp: 0 rem(1) rem(18) 0 rgba(black, $key-shadow-penumbra-opacity),
+  8dp: 0 rem(3) rem(14) rem(3) rgba(black, $key-shadow-penumbra-opacity),
+  9dp: 0 rem(3) rem(16) rem(2) rgba(black, $key-shadow-penumbra-opacity),
+  12dp: 0 rem(5) rem(22) rem(4) rgba(black, $key-shadow-penumbra-opacity),
+  16dp: 0 rem(6) rem(30) rem(5) rgba(black, $key-shadow-penumbra-opacity),
+  24dp: 0 rem(9) rem(46) rem(8) rgba(black, $key-shadow-penumbra-opacity)
+);
+
+$ambient-shadow: (
+  1dp: 0 rem(1) rem(3) 0 rgba(black, $ambient-shadow-opacity),
+  2dp: 0 rem(1) rem(5) 0 rgba(black, $ambient-shadow-opacity),
+  3dp: 0 rem(1) rem(8) 0 rgba(black, $ambient-shadow-opacity),
+  4dp: 0 rem(1) rem(10) 0 rgba(black, $ambient-shadow-opacity),
+  6dp: 0 rem(3) rem(5) 0 rgba(black, $ambient-shadow-opacity),
+  8dp: 0 rem(4) rem(15) 0 rgba(black, $ambient-shadow-opacity),
+  9dp: 0 rem(5) rem(6) 0 rgba(black, $ambient-shadow-opacity),
+  12dp: 0 rem(7) rem(8) 0 rgba(black, $ambient-shadow-opacity),
+  16dp: 0 rem(8) rem(10) 0 rgba(black, $ambient-shadow-opacity),
+  24dp: 0 rem(11) rem(15) 0 rgba(black, $ambient-shadow-opacity)
+);

@@ -1,0 +1,17 @@
+@import './variables/font';
+
+@function tracking-to-em($track-amount) {
+  @return #{$track-amount / 1000}em;
+}
+
+@function tracking($track-amount) {
+  @return tracking-to-em($track-amount);
+}
+
+@function px-to-rem($px) {
+  @return #{$px / $font-size-dec}rem;
+}
+
+@function rem($px) {
+  @return px-to-rem($px);
+}

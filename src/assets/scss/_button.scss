@@ -1,0 +1,63 @@
+@import './utils';
+@import './mixins/index';
+@import './variables/font';
+
+%button {
+  @include typography-btn();
+  position: relative;
+  overflow: hidden;
+  height: rem(36);
+  min-width: rem(88);
+  padding: 0 rem(8);
+  margin: rem(6) rem(8);
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: rem(2);
+
+  $bg-transition: background-color 300ms ease-in-out;
+  $col-transition: color 300ms ease-in-out;
+
+  transition: $bg-transition, $col-transition;
+
+  &:disabled {
+    transition: $bg-transition, $col-transition;
+  }
+}
+
+.btn {
+  @extend %button;
+  &:focus,
+  &:hover {
+    background-color: rgba(#999999, 0.4);
+  }
+  &:disabled {
+    color: rgba(black, 0.26);
+  }
+  &.primary {
+    color: $primary-500;
+  }
+  &:disabled {
+    color: rgba(black, 0.26);
+    background-color: rgba(#999, 0.4);
+  }
+}
+
+.btn-raised {
+  @extend %button;
+  @include shadow(2dp);
+  &:disabled {
+    background-color: rgba(black, 0.12);
+    color: rgba(black, 0.26);
+  }
+}
+
+.btn-raised.primary {
+  background-color: $primary-500;
+  color: $font-light-1;
+  &:disabled {
+    background-color: rgba(black, 0.12);
+    color: rgba(black, 0.26);
+  }
+}

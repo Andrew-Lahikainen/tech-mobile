@@ -1,0 +1,7 @@
+@import '../variables/shadow';
+
+@mixin shadow($dp) {
+  @if map-has-key($key-shadow-umbra, $dp) {
+    box-shadow: map-get($key-shadow-umbra, $dp), map-get($key-shadow-penumbra, $dp), map-get($ambient-shadow, $dp);
+  }
+}

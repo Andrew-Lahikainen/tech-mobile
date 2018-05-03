@@ -1,0 +1,57 @@
+@import './mixins/typography';
+
+.display-1 {
+  @include typography-display-1();
+}
+
+.display-2 {
+  @include typography-display-2();
+}
+
+.display-3 {
+  @include typography-display-3();
+}
+
+.display-4 {
+  @include typography-display-4();
+}
+
+.headline {
+  @include typography-headline();
+}
+
+.title {
+  @include typography-title();
+}
+
+.subheading-1 {
+  @include typography-subheading-1();
+}
+
+.subheading-2 {
+  @include typography-subheading-2();
+}
+
+.body-1 {
+  @include typography-body-1();
+}
+
+.body-2 {
+  @include typography-body-2();
+}
+
+.caption {
+  @include typography-caption();
+}
+
+.uppercase {
+  @include typography-uppercase();
+}
+
+.lowercase {
+  @include typography-lowercase();
+}
+
+.titlecase {
+  @include typography-titlecase();
+}

@@ -1,0 +1,134 @@
+@import '../variables/index';
+@import '../utils';
+@import './media';
+
+@mixin typography-body-1() {
+  color: $font-dark-1;
+  line-height: rem(20);
+  letter-spacing: tracking(10);
+  @include media-lt-medium() {
+    font-size: rem(13);
+  }
+  font: {
+    size: rem(14);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-body-2 {
+  @include typography-body-1();
+  font-weight: $font-weight-bold;
+  line-height: rem(24);
+}
+
+@mixin typography-caption {
+  color: $font-dark-2;
+  letter-spacing: tracking(20);
+  font: {
+    size: rem(12);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-subheading-1 {
+  color: $font-dark-1;
+  line-height: rem(24);
+  letter-spacing: tracking(10);
+  @include media-lt-medium() {
+    font-size: rem(15);
+  }
+  font: {
+    size: rem(16);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-subheading-2 {
+  @include typography-subheading-1();
+  line-height: rem(28);
+}
+
+@mixin typography-title {
+  color: $font-dark-1;
+  letter-spacing: tracking(5);
+  font: {
+    size: rem(20);
+    family: $font-family;
+    weight: $font-weight-medium;
+  }
+}
+
+@mixin typography-headline {
+  color: $font-dark-1;
+  line-height: rem(32);
+  font: {
+    size: rem(24);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-display-1 {
+  color: $font-dark-2;
+  line-height: rem(48);
+  font: {
+    size: rem(34);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-display-2 {
+  color: $font-dark-2;
+  line-height: rem(48);
+  font: {
+    size: rem(45);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-display-3 {
+  color: $font-dark-2;
+  letter-spacing: tracking(-5);
+  font: {
+    size: rem(56);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-display-4 {
+  color: $font-dark-2;
+  letter-spacing: tracking(-10);
+  font: {
+    size: rem(112);
+    family: $font-family;
+    weight: $font-weight-normal;
+  }
+}
+
+@mixin typography-btn {
+  color: $font-dark-1;
+  letter-spacing: tracking(10);
+  font: {
+    size: rem(14);
+    family: $font-family;
+    weight: $font-weight-medium;
+  }
+}
+
+@mixin typography-uppercase {
+  text-transform: uppercase;
+}
+
+@mixin typography-lowercase {
+  text-transform: lowercase;
+}
+
+@mixin typography-titlecase {
+  text-transform: capitalize;
+}

@@ -1,0 +1,76 @@
+// Breakpoints (upper bound)
+$x-small: 48em;
+$small: 60em;
+$medium: 96em;
+$large: 128em;
+$x-large: 160em;
+
+@mixin media-x-small {
+  @media (max-width: #{$x-small}) {
+    @content;
+  }
+}
+
+@mixin media-gt-x-small {
+  @media (min-width: #{$x-small}) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media (min-width: #{$x-small}) and (max-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin media-gt-small {
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin media-lt-small {
+  @media (max-width: #{$x-small}) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media (min-width: #{$small}) and (max-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin media-gt-medium {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin media-lt-medium {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media (min-width: #{$medium}) and (max-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin media-gt-large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin media-lt-large {
+  @media (max-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin media-x-large {
+  @include media-gt-large;
+}

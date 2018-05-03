@@ -1,0 +1,14 @@
+@import './utils';
+@import './mixins/typography';
+@import './variables/color';
+
+.input {
+  @include typography-body-1();
+  padding: rem(10);
+  border: 1px solid #eee;
+  border-radius: rem(2);
+  box-shadow: none;
+  &:focus {
+    outline: 2px solid $primary-500;
+  }
+}
